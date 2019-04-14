@@ -23,14 +23,15 @@ Secuencia de pasos
 > gcc -E hello2.c -o hello2.i
 
 Mediante este comando podemos generar el archivo preprocesado. Este se encarga de incluir archivos, directiva #include y de reemplazar comentarios.
-Si abrimos el archivo "hello2.i" con el notepad, podemos notar que se agregaron el encabezado, con la respectiva ruta a cada archivo, de varias funciones propias de mingw y de la libreria stdio.h, asi mismo el comentario "/*medio*/" ya no se ve
+Si abrimos el archivo "hello2.i" con el notepad, podemos notar que se agregaron el encabezado, con la respectiva ruta a cada archivo, de varias funciones propias de mingw y de la libreria stdio.h, asi mismo el comentario "/\*medio*/" ya no se ve
 
 
 **3)Escribir hello3.c, una nueva variante.**
 
 
-**4)Investigar la semántica de la primera línea.**
-int printf(const char *s, ...); es correcto semanticamente ya que es el encabezado de una funcion de tipo int llamada "printf" que recibe una cantidad de argumentos variable y termina con ";"
+**4)Investigar la semántica de la primera línea.**  
+*int printf(const char \*s, ...);*
+es correcto semanticamente ya que es el encabezado de una funcion de tipo int llamada "printf" que recibe una cantidad de argumentos variable y termina con ";"
 
 **5)Preprocesar hello3.c, no compilar, y generar hello3.i. Buscar diferencias entre hello3.c y hello3.i.**
 > gcc -E hello3.c -o hello3.i
