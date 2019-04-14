@@ -81,4 +81,4 @@ Ahora se muestra correctamente la respuesta
 
 > gcc hello7.c -o hello7.exe  
 
-Se muestran varias alertas de tipo warning indicando la declaracion implicita de la funcion printf y luego se muestra una nota indicando que se va a incluir la libreria estandar ya que el compilador detecta que la funcion printf es parte de la libreria estandar
+Se muestran varias alertas de tipo warning indicando la declaracion implicita de la funcion printf y luego se muestra una nota indicando que se va a incluir la libreria estandar ya que el linker detecta que la funcion printf es parte de la libreria estandar
